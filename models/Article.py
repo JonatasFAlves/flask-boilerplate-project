@@ -12,6 +12,9 @@ class Article(db.Model):
     name = db.Column(db.String(100), unique=True)
     price = db.Column(db.Float)
 
+    def __repr__(self):
+        return "Article: {} {}c".format(self.name, self.price)
+
 # Article Schema
 class ArticleSchema(ma.Schema):
     id = fields.Integer()
