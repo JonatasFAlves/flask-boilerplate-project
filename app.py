@@ -14,4 +14,5 @@ app.register_blueprint(api_blueprint, url_prefix='/api')
 
 # Run Server
 if __name__ == '__main__':
+  print("Please access http://localhost:5000/api/status")
   app.run(debug=True)
